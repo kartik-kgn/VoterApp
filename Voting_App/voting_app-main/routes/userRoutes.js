@@ -71,7 +71,7 @@ router.post('/login', async(req, res) => {
         }
         const token = generateToken(payload);
 
-        // resturn token as response
+        // return token as response
         res.json({token})
     }catch(err){
         console.error(err);
